@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+<!-- Mirrored from www.primefaces.org/manhattan/dashboard.xhtml by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Mar 2018 22:59:17 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/><!-- /Added by HTTrack -->
+<h:head id="j_idt2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link type="text/css" rel="stylesheet"
+          href="#{request.contextPath}/resources/javax.faces.resource/theme.css291b.css?ln=primefaces-manhattan-darkblue"/>
+    <link type="text/css" rel="stylesheet"
+          href="#{request.contextPath}/resources/javax.faces.resource/fa/font-awesome.css6720.css?ln=primefaces&amp;v=6.0"/>
+    <link type="text/css" rel="stylesheet"
+          href="#{request.contextPath}/resources/javax.faces.resource/components.css.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq1052286720.css?ln=primefaces&amp;v=6.0"/>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javax.faces.resource/jquery/jquery.js.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq1052286720.node0?ln=primefaces&amp;v=6.0"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javax.faces.resource/jquery/jquery-plugins.js.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq1052286720.node0?ln=primefaces&amp;v=6.0"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javax.faces.resource/core.js.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq1052286720.node0?ln=primefaces&amp;v=6.0"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javax.faces.resource/components.js.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq1052286720.node0?ln=primefaces&amp;v=6.0"></script>
+    <link type="text/css" rel="stylesheet"
+          href="#{request.contextPath}/resources/javax.faces.resource/charts/charts.css.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq1052286720.css?ln=primefaces&amp;v=6.0"/>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javax.faces.resource/charts/charts.js.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq1052286720.node0?ln=primefaces&amp;v=6.0"></script>
+    <link type="text/css" rel="stylesheet"
+          href="#{request.contextPath}/resources/javax.faces.resource/schedule/schedule.css.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq1052286720.css?ln=primefaces&amp;v=6.0"/>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javax.faces.resource/moment/moment.js.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq1052286720.node0?ln=primefaces&amp;v=6.0"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javax.faces.resource/schedule/schedule.js.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq1052286720.node0?ln=primefaces&amp;v=6.0"></script>
+    <link type="text/css" rel="stylesheet"
+          href="#{request.contextPath}/resources/javax.faces.resource/css/nanoscroller.css.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.css?ln=manhattan-layout"/>
+    <link type="text/css" rel="stylesheet"
+          href="#{request.contextPath}/resources/javax.faces.resource/css/animate.css.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.css?ln=manhattan-layout"/>
+    <link type="text/css" rel="stylesheet"
+          href="#{request.contextPath}/resources/javax.faces.resource/css/layout-blue.css.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.css?ln=manhattan-layout"/>
+    <script type="text/javascript">if (window.PrimeFaces) {
+        PrimeFaces.settings.locale = 'en_US';
+        PrimeFaces.settings.projectStage = 'Development';
+    }</script>
+    <title><ui:insert name="pageTitle" />Dashboard</title>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javax.faces.resource/js/nanoscroller.js.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.node0?ln=manhattan-layout"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javax.faces.resource/js/layout.js.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.node0?ln=manhattan-layout"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        function skinBar() {
+            this.cfg.shadow = false;
+            this.cfg.title = '';
+            this.cfg.seriesColors = ['#3984b8', '#7e8dcd'];
+            this.cfg.grid = {
+                background: '#ffffff',
+                borderColor: '#ffffff',
+                gridLineColor: '#dee4e9',
+                shadow: false
+            };
+            this.cfg.axesDefaults = {
+                borderWidth: 0.1,
+                borderColor: 'dce2e7',
+                rendererOptions: {
+                    textColor: '#757575'
+                }
+            };
+            this.cfg.seriesDefaults = {
+                shadow: false,
+                lineWidth: 1,
+                renderer: $.jqplot.BarRenderer,
+                markerOptions: {
+                    shadow: false,
+                    size: 7,
+                    style: 'circle'
+                }
+            }
+        }
+
+        //]]>
+    </script>
+    <style type="text/css">
+        .main-content {
+            padding: 0;
+        }
+    </style>
+</h:head>
+<h:body>
+    <div class="layout-wrapper">
+        <ui:include src="/template/menu.xhtml"/>
+        <div class="layout-main">
+
+            <ui:include src="/template/topBar.xhtml"/>
+            <div class="layout-content">
+                <ui:insert name="pageContent" />
+
+            </div>
+
+            <div class="layout-footer clearfix">
+                <a href="dashboard.html"><img id="j_idt154"
+                                              src="#{request.contextPath}/resources/javax.faces.resource/images/logo.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                              alt="" height="20"/>
+                </a>
+                <div class="layout-footer-icons">
+                    <a href="https://github.com/primefaces"><i class="fa fa-github"></i></a>
+                    <a href="https://www.facebook.com/groups/primefaces"><i class="fa fa-facebook"></i></a>
+                    <a href="http://twitter.com/primefaces"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="layout-main-mask"></div>
+        </div>
+
+        <div class="layout-rightpanel">
+            <div class="nano">
+                <div class="nano-content right-panel-scroll-content">
+                    <div class="layout-rightpanel-header">
+                        <div class="weather-day">Wednesday</div>
+                        <div class="weather-date">Jan 26</div>
+                    </div>
+
+                    <div class="layout-rightpanel-content">
+                        <h1>Weather</h1>
+                        <h2>New York, USA</h2>
+
+                        <div class="weather-today">
+                            <span class="weather-today-value">21℃</span><img id="j_idt158"
+                                                                             src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/weather-icon-2.svg.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.svg?ln=manhattan-layout"
+                                                                             alt="" width="60"/>
+                        </div>
+
+                        <ul class="weekly-weather">
+                            <li>
+                                Thursday
+                                <img id="j_idt160"
+                                     src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/weather-icon-1.svg.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.svg?ln=manhattan-layout"
+                                     alt=""/>
+                                <span class="weekly-weather-value">24</span>
+                            </li>
+                            <li>
+                                Friday
+                                <img id="j_idt162"
+                                     src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/weather-icon-3.svg.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.svg?ln=manhattan-layout"
+                                     alt=""/>
+                                <span class="weekly-weather-value">19</span>
+                            </li>
+                            <li>
+                                Saturday
+                                <img id="j_idt164"
+                                     src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/weather-icon-4.svg.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.svg?ln=manhattan-layout"
+                                     alt=""/>
+                                <span class="weekly-weather-value">15</span>
+                            </li>
+                            <li>
+                                Sunday
+                                <img id="j_idt166"
+                                     src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/weather-icon-1.svg.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.svg?ln=manhattan-layout"
+                                     alt=""/>
+                                <span class="weekly-weather-value">24</span>
+                            </li>
+                            <li>
+                                Monday
+                                <img id="j_idt168"
+                                     src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/weather-icon-2.svg.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.svg?ln=manhattan-layout"
+                                     alt=""/>
+                                <span class="weekly-weather-value">21</span>
+                            </li>
+                            <li>
+                                Tuesday
+                                <img id="j_idt170"
+                                     src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/weather-icon-3.svg.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.svg?ln=manhattan-layout"
+                                     alt=""/>
+                                <span class="weekly-weather-value">20</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="j_idt173" style="width:32px;height:32px;position:fixed;right:7px;bottom:7px">
+        <div id="j_idt173_start" style="display:none">
+            <i class="fa fa-circle-o-notch fa-spin ajax-loader" aria-hidden="true"></i></div>
+        <div id="j_idt173_complete" style="display:none"></div>
+    </div>
+    <script id="j_idt173_s" type="text/javascript">$(function () {
+        PrimeFaces.cw("AjaxStatus", "widget_j_idt173", {id: "j_idt173"});
+    });</script>
+</h:body>
+
+
+<!-- Mirrored from www.primefaces.org/manhattan/dashboard.xhtml by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Mar 2018 22:59:32 GMT -->
+</html>

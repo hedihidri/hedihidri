@@ -1,0 +1,93 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui" template="/template/dashboard.xhtml">
+
+    <ui:define name="pageTitle">utilisateurs List</ui:define>
+
+    <ui:define name="pageUrl">utilisateur</ui:define>
+    <ui:define name="pageUrl2">Liste des utilisateurs</ui:define>
+    <ui:define name="pageContent">
+        <h:form id="form1">
+            <p:growl id="msgs" showDetail="true"/>
+
+            <p:dataTable  var="u"
+                         value="#{authentifiacationBean.listUsers}" editable="true" rows="5"
+                         paginator="true"
+                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                         rowsPerPageTemplate="3,5,10,15" style="margin-bottom:20px">
+                <f:facet name="header">
+                   users
+
+                </f:facet>
+                
+                
+                    <p:column headerText="Firstname" sortBy="#{u.firstName}">
+                    <p:cellEditor>
+                        <f:facet name="output">
+                            <h:outputText value="#{u.firstName}"/>
+                        </f:facet>
+                        <f:facet name="input">
+                            <p:inputText id="modelInput" value="#{u.firstName}"
+                                         style="width:100%"/>
+                        </f:facet>
+                    </p:cellEditor>
+                </p:column>
+
+                <p:column headerText="lastname" sortBy="#{u.lastName}">
+                         
+                    <p:cellEditor>
+                        <f:facet name="output">
+                            <h:outputText value="#{u.lastName}"/>
+                        </f:facet>
+                        <f:facet name="input">
+                            <p:inputText value="#{u.lastName}" style="width:100%"
+                                         label="Lastname"/>
+                        </f:facet>
+                    </p:cellEditor>
+                </p:column>
+
+                <p:column headerText="roles"
+                          sortBy="#{u.roles}">
+                    <p:cellEditor>
+                        <f:facet name="output">
+                            <h:outputText value="#{u.roles}"/>
+                        </f:facet>
+                        <f:facet name="input">
+                            <p:inputText value="#{u.roles}" style="width:100%"
+                                         label="roles"/>
+                        </f:facet>
+
+                    </p:cellEditor>
+                </p:column>
+                   <p:column headerText="email"
+                          sortBy="#{u.email}}">
+                    <p:cellEditor>
+                        <f:facet name="output">
+                            <h:outputText value="#{u.email}"/>
+                        </f:facet>
+                        <f:facet name="input">
+                            <p:inputText value="#{u.email}" style="width:100%"
+                                         label="email"/>
+                        </f:facet>
+
+                    </p:cellEditor>
+                </p:column>
+                    <p:column style="width:40px">
+
+                    <p:commandLink actionListener="#{authentifiacationBean.userremove(u)}"
+                                   update="form1">
+                        <h:outputText value="Delete"/>
+                    </p:commandLink>
+
+                </p:column>
+                
+                    </p:dataTable>
+
+        </h:form>
+                
+                
+    </ui:define>
+</ui:composition>
+

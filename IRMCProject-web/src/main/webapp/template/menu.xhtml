@@ -1,0 +1,219 @@
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+    <div class="layout-sidebar">
+        <div class="sidebar-logo">
+            <a href="dashboard.html"><img id="j_idt13"
+                                          src="#{request.contextPath}/resources/javax.faces.resource/images/logo-white.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                          alt=""/>
+            </a>
+            <a href="#" class="sidebar-anchor animated fadeIn" title="Toggle Menu">
+                <i class="fa"></i>
+            </a>
+        </div>
+
+        <div class="nano">
+            <div class="nano-content sidebar-scroll-content">
+                <div class="layout-menu-container">
+                    <form id="menuform" name="menuform" method="post"
+                          action="https://www.primefaces.org/manhattan/dashboard.xhtml;jsessionid=node0s8mlup7xlb1a1gggjfhgfa8fq105228.node0"
+                          enctype="application/x-www-form-urlencoded">
+                        <input type="hidden" name="menuform" value="menuform"/>
+                        <ul id="menuform:j_idt15" class="layout-menu">
+                            <li id="menuform:pm_dashboard" role="menuitem"><a
+                                    href="dashboard.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"><i
+                                    class="fa fa-home fa-fw"></i><span>Dashboard</span></a></li>
+                            <li id="menuform:pm_themes_colors" role="menuitem"><a href="#"><i
+                                    class="fa fa-paint-brush fa-fw"></i><span>Themes</span><i
+                                    class="fa fa-fw layout-submenu-toggler fa-angle-down"></i><span
+                                    class="menuitem-badge">5</span></a>
+                                <ul role="menu">
+                                    <li id="menuform:pm_layout_blue" role="menuitem"><a href="#"
+                                                                                        onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:pm_layout_blue':'menuform:pm_layout_blue'}).submit('menuform');return false;"><i
+                                            class="fa fa-diamond fa-fw"></i><span>Blue - Pink</span></a></li>
+                                    <li id="menuform:pm_layout_teal" role="menuitem"><a href="#"
+                                                                                        onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:pm_layout_teal':'menuform:pm_layout_teal'}).submit('menuform');return false;"><i
+                                            class="fa fa-diamond fa-fw"></i><span>Teal - Red</span></a></li>
+                                    <li id="menuform:pm_layout_nightblue" role="menuitem"><a href="#"
+                                                                                             onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:pm_layout_nightblue':'menuform:pm_layout_nightblue'}).submit('menuform');return false;"><i
+                                            class="fa fa-diamond fa-fw"></i><span>Blue - Orange</span></a></li>
+                                    <li id="menuform:pm_layout_grey" role="menuitem"><a href="#"
+                                                                                        onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:pm_layout_grey':'menuform:pm_layout_grey'}).submit('menuform');return false;"><i
+                                            class="fa fa-diamond fa-fw"></i><span>Grey - Green</span></a></li>
+                                    <li id="menuform:pm_layout_bluegrey" role="menuitem"><a href="#"
+                                                                                            onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:pm_layout_bluegrey':'menuform:pm_layout_bluegrey'}).submit('menuform');return false;"><i
+                                            class="fa fa-diamond fa-fw"></i><span>Blue Grey - Green</span></a></li>
+                                    <li id="menuform:pm_layout_amber" role="menuitem"><a href="#"
+                                                                                         onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:pm_layout_amber':'menuform:pm_layout_amber'}).submit('menuform');return false;"><i
+                                            class="fa fa-diamond fa-fw"></i><span>Amber - Purple</span></a></li>
+                                    <li id="menuform:pm_layout_darkblue" role="menuitem"><a href="#"
+                                                                                            onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:pm_layout_darkblue':'menuform:pm_layout_darkblue'}).submit('menuform');return false;"><i
+                                            class="fa fa-diamond fa-fw"></i><span>Dark Blue - Turquoise</span></a></li>
+                                    <li id="menuform:pm_layout_turquoise" role="menuitem"><a href="#"
+                                                                                             onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:pm_layout_turquoise':'menuform:pm_layout_turquoise'}).submit('menuform');return false;"><i
+                                            class="fa fa-diamond fa-fw"></i><span>Turquoise - Red</span></a></li>
+                                    <li id="menuform:pm_layout_purple" role="menuitem"><a href="#"
+                                                                                          onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:pm_layout_purple':'menuform:pm_layout_purple'}).submit('menuform');return false;"><i
+                                            class="fa fa-diamond fa-fw"></i><span>Purple - Pink</span></a></li>
+                                    <li id="menuform:pm_layout_pink" role="menuitem"><a href="#"
+                                                                                        onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:pm_layout_pink':'menuform:pm_layout_pink'}).submit('menuform');return false;"><i
+                                            class="fa fa-diamond fa-fw"></i><span>Pink - Purple</span></a></li>
+                                </ul>
+                            </li>
+                            <li id="menuform:pm_components" role="menuitem" class="orange-badge"><a href="#"><i
+                                    class="fa fa-sitemap fa-fw"></i><span>Components</span><i
+                                    class="fa fa-fw layout-submenu-toggler fa-angle-down"></i><span
+                                    class="menuitem-badge">10</span></a>
+                                <ul role="menu">
+                                    <li id="menuform:pm_sample" role="menuitem"><a
+                                            href="sample.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"><i
+                                            class="fa fa-columns fa-fw"></i><span>Sample Page</span></a></li>
+                                    <li id="menuform:pm_forms" role="menuitem"><a
+                                            href="forms.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"><i
+                                            class="fa fa-code fa-fw"></i><span>Forms</span></a></li>
+                                    <li id="menuform:pm_data" role="menuitem"><a
+                                            href="data.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"><i
+                                            class="fa fa-table fa-fw"></i><span>Data</span></a></li>
+                                    <li id="menuform:pm_panels" role="menuitem"><a
+                                            href="panel.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"><i
+                                            class="fa fa-list-alt fa-fw"></i><span>Panels</span></a></li>
+                                    <li id="menuform:pm_overlays" role="menuitem"><a
+                                            href="overlay.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"><i
+                                            class="fa fa-square fa-fw"></i><span>Overlays</span></a></li>
+                                    <li id="menuform:pm_menus" role="menuitem"><a
+                                            href="menu.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"><i
+                                            class="fa fa-minus-square-o fa-fw"></i><span>Menus</span></a></li>
+                                    <li id="menuform:pm_messages" role="menuitem"><a
+                                            href="messages.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"><i
+                                            class="fa fa-circle-o-notch fa-fw"></i><span>Messages</span></a></li>
+                                    <li id="menuform:pm_charts" role="menuitem"><a
+                                            href="charts.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"><i
+                                            class="fa fa-area-chart fa-fw"></i><span>Charts</span></a></li>
+                                    <li id="menuform:pm_file" role="menuitem"><a
+                                            href="file.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"><i
+                                            class="fa fa-arrow-circle-o-up fa-fw"></i><span>File</span></a></li>
+                                    <li id="menuform:pm_misc" role="menuitem"><a
+                                            href="misc.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"><i
+                                            class="fa fa-user-secret fa-fw"></i><span>Misc</span></a></li>
+                                </ul>
+                            </li>
+                            <li id="menuform:pm_default" role="menuitem"><a href="#"><i
+                                    class="fa fa-life-saver fa-fw"></i><span>Template Pages</span><i
+                                    class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                <ul role="menu">
+                                    <li id="menuform:pm_empty" role="menuitem"><a
+                                            href="empty.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"><i
+                                            class="fa fa-square-o fa-fw"></i><span>Empty Page</span></a></li>
+                                    <li id="menuform:pm_landing" role="menuitem"><a
+                                            href="landing.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"
+                                            target="_blank"><i
+                                            class="fa fa-globe fa-fw"></i><span>Landing Page</span></a></li>
+                                    <li id="menuform:pm_login" role="menuitem"><a
+                                            href="login.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"
+                                            target="_blank"><i
+                                            class="fa fa-sign-in fa-fw"></i><span>Login Page</span></a></li>
+                                    <li id="menuform:pm_error" role="menuitem"><a
+                                            href="error.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"
+                                            target="_blank"><i
+                                            class="fa fa-exclamation-circle fa-fw"></i><span>Error Page</span></a>
+                                    </li>
+                                    <li id="menuform:pm_404" role="menuitem"><a
+                                            href="404.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"
+                                            target="_blank"><i class="fa fa-times fa-fw"></i><span>404 Page</span></a>
+                                    </li>
+                                    <li id="menuform:pm_access" role="menuitem"><a
+                                            href="access.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"
+                                            target="_blank"><i
+                                            class="fa fa-exclamation-triangle fa-fw"></i><span>Access Denied Page</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="menuform:pm_hierarchy" role="menuitem"><a href="#"><i
+                                    class="fa fa-tree fa-fw"></i><span>Menu Hierarchy</span><i
+                                    class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                <ul role="menu">
+                                    <li id="menuform:pm_sm1" role="menuitem"><a href="#"><i
+                                            class="fa fa-sign-in fa-fw"></i><span>Submenu 1</span><i
+                                            class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                        <ul role="menu">
+                                            <li id="menuform:pm_sm11" role="menuitem"><a href="#"><i
+                                                    class="fa fa-sign-in fa-fw"></i><span>Submenu 1.1</span><i
+                                                    class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                                <ul role="menu">
+                                                    <li id="menuform:pm_lnk111" role="menuitem"><a
+                                                            href="%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html#"><i
+                                                            class="fa fa-sign-in fa-fw"></i><span>Link 1.1.1</span></a>
+                                                    </li>
+                                                    <li id="menuform:pm_lnk112" role="menuitem"><a
+                                                            href="%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html#"><i
+                                                            class="fa fa-sign-in fa-fw"></i><span>Link 1.1.2</span></a>
+                                                    </li>
+                                                    <li id="menuform:pm_lnk113" role="menuitem"><a
+                                                            href="%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html#"><i
+                                                            class="fa fa-sign-in fa-fw"></i><span>Link 1.1.3</span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li id="menuform:pm_sm12" role="menuitem"><a href="#"><i
+                                                    class="fa fa-sign-in fa-fw"></i><span>Submenu 1.2</span><i
+                                                    class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                                <ul role="menu">
+                                                    <li id="menuform:pm_lnk121" role="menuitem"><a
+                                                            href="%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html#"><i
+                                                            class="fa fa-sign-in fa-fw"></i><span>Link 1.2.1</span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menuform:pm_sm2" role="menuitem"><a href="#"><i
+                                            class="fa fa-sign-in fa-fw"></i><span>Submenu 2</span><i
+                                            class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                        <ul role="menu">
+                                            <li id="menuform:pm_sm21" role="menuitem"><a href="#"><i
+                                                    class="fa fa-sign-in fa-fw"></i><span>Submenu 2.1</span><i
+                                                    class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                                <ul role="menu">
+                                                    <li id="menuform:pm_lnk211" role="menuitem"><a
+                                                            href="%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html#"><i
+                                                            class="fa fa-sign-in fa-fw"></i><span>Link 2.1.1</span></a>
+                                                    </li>
+                                                    <li id="menuform:pm_lnk212" role="menuitem"><a
+                                                            href="%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html#"><i
+                                                            class="fa fa-sign-in fa-fw"></i><span>Link 2.1.2</span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li id="menuform:pm_sm22" role="menuitem"><a href="#"><i
+                                                    class="fa fa-sign-in fa-fw"></i><span>Submenu 2.2</span><i
+                                                    class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a>
+                                                <ul role="menu">
+                                                    <li id="menuform:pm_lnk221" role="menuitem"><a
+                                                            href="%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html#"><i
+                                                            class="fa fa-sign-in fa-fw"></i><span>Link 2.2.1</span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="menuform:pm_doc" role="menuitem"><a
+                                    href="docs.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html"><i
+                                    class="fa fa-book fa-fw"></i><span>Documentation</span></a></li>
+                        </ul>
+                        <script id="menuform:j_idt15_s"
+                                type="text/javascript">PrimeFaces.cw("Manhattan", "widget_menuform_j_idt15", {id: "menuform:j_idt15"});</script>
+                        <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0"
+                               value="-4650909522993706924:5052886525237526637" autocomplete="off"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</ui:composition>

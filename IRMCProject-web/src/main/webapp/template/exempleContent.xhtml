@@ -1,0 +1,972 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/template/dashboard.xhtml">
+
+    <ui:define name="pageTitle">Login</ui:define>
+    <ui:define name="pageContent">
+        <div class="ui-g dashboard">
+            <div class="ui-g-12 ui-md-6 ui-lg-3">
+                <div class="ui-g overview-box overview-box-1">
+                    <div class="overview-box-icon">
+                        <i class="fa fa-inbox"></i>
+                    </div>
+                    <div class="overview-box-content">
+                        <div class="overview-box-title">Unread Messages</div>
+                        <div class="overview-box-stats">150</div>
+                        <div class="overview-box-details">+%50 more than yesterday</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-6 ui-lg-3">
+                <div class="ui-g overview-box overview-box-2">
+                    <div class="overview-box-icon">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <div class="overview-box-content">
+                        <div class="overview-box-title">Check-Ins</div>
+                        <div class="overview-box-stats">532</div>
+                        <div class="overview-box-details">+%75 more than yesterday</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-6 ui-lg-3">
+                <div class="ui-g overview-box overview-box-3">
+                    <div class="overview-box-icon">
+                        <i class="fa fa-folder"></i>
+                    </div>
+                    <div class="overview-box-content">
+                        <div class="overview-box-title">Files Synced</div>
+                        <div class="overview-box-stats">25</div>
+                        <div class="overview-box-details">+%15 more than yesterday</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-6 ui-lg-3">
+                <div class="ui-g overview-box overview-box-4">
+                    <div class="overview-box-icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="overview-box-content">
+                        <div class="overview-box-title">Users Online</div>
+                        <div class="overview-box-stats">156</div>
+                        <div class="overview-box-details">-%20 less than last week</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-g-12 ui-lg-6 global-sales">
+                <div id="j_idt35" class="ui-panel ui-widget ui-widget-content ui-corner-all"
+                     data-widget="widget_j_idt35">
+                    <div id="j_idt35_header"
+                         class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span
+                            class="ui-panel-title">
+                        Global Sales by Region
+                        <span class="header-helper">Last Update: 21m</span></span></div>
+                    <div id="j_idt35_content" class="ui-panel-content ui-widget-content">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>Total Sales</th>
+                                <th>Change</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img id="j_idt38"
+                                         src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/flag-brazil.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                         alt="" width="45"/></td>
+                                <td>BRAZIL</td>
+                                <td>4234</td>
+                                <td>35%</td>
+                                <td><i class="fa fa-arrow-up"></i></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img id="j_idt40"
+                                         src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/flag-china.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                         alt="" width="45"/></td>
+                                <td>CHINA</td>
+                                <td>3214</td>
+                                <td>25%</td>
+                                <td><i class="fa fa-arrow-up"></i></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img id="j_idt42"
+                                         src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/flag-belgium.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                         alt="" width="45"/></td>
+                                <td>BELGIUM</td>
+                                <td>2842</td>
+                                <td>28%</td>
+                                <td><i class="fa fa-arrow-down"></i></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img id="j_idt44"
+                                         src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/flag-france.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                         alt="" width="45"/></td>
+                                <td>FRANCE</td>
+                                <td>1942</td>
+                                <td>15%</td>
+                                <td><i class="fa fa-arrow-up"></i></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><img id="j_idt46"
+                                         src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/flag-uk.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                         alt="" width="45"/></td>
+                                <td>UK</td>
+                                <td>1956</td>
+                                <td>25%</td>
+                                <td><i class="fa fa-arrow-up"></i></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <script id="j_idt35_s"
+                        type="text/javascript">PrimeFaces.cw("Panel", "widget_j_idt35", {id: "j_idt35"});</script>
+            </div>
+
+            <div class="ui-g-12 ui-lg-6 stats">
+                <div id="j_idt49" class="ui-panel ui-widget ui-widget-content ui-corner-all"
+                     data-widget="widget_j_idt49">
+                    <div id="j_idt49_header"
+                         class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span
+                            class="ui-panel-title">Statistics</span></div>
+                    <div id="j_idt49_content" class="ui-panel-content ui-widget-content">
+                        <div class="knob-1 knob">
+                            <div class="knob-2 knob">
+                                <div class="knob-3 knob"></div>
+                            </div>
+                        </div>
+
+                        <div class="ui-g legend">
+                            <div class="ui-g-12 ui-md-4 idle">
+                                <div class="legend-color"></div>
+                                <div class="legend-name">Idle</div>
+                                <div class="legend-number">43242</div>
+                            </div>
+                            <div class="ui-g-12 ui-md-4 pending">
+                                <div class="legend-color"></div>
+                                <div class="legend-name">Pending</div>
+                                <div class="legend-number">6345</div>
+                            </div>
+                            <div class="ui-g-12 ui-md-4 completed">
+                                <div class="legend-color"></div>
+                                <div class="legend-name">Completed</div>
+                                <div class="legend-number">4626</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script id="j_idt49_s"
+                        type="text/javascript">PrimeFaces.cw("Panel", "widget_j_idt49", {id: "j_idt49"});</script>
+            </div>
+
+            <div class="ui-g-12 ui-md-6 ui-lg-4 task-list">
+                <div id="j_idt52" class="ui-panel ui-widget ui-widget-content ui-corner-all"
+                     data-widget="widget_j_idt52">
+                    <div id="j_idt52_header"
+                         class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span
+                            class="ui-panel-title">Tasks</span></div>
+                    <div id="j_idt52_content" class="ui-panel-content ui-widget-content">
+                        <ul>
+                            <li>
+                                <div id="j_idt54" class="ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt54_input"
+                                                                                    name="j_idt54_input"
+                                                                                    type="checkbox"
+                                                                                    autocomplete="off"
+                                                                                    aria-checked="false"/></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt54_s"
+                                        type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt54", {id: "j_idt54"});</script>
+                                <span class="task-name">Sales Reports</span>
+                                <i class="fa fa-briefcase"></i>
+                            </li>
+                            <li>
+                                <div id="j_idt56" class="ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt56_input"
+                                                                                    name="j_idt56_input"
+                                                                                    type="checkbox"
+                                                                                    autocomplete="off"
+                                                                                    aria-checked="false"/></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt56_s"
+                                        type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt56", {id: "j_idt56"});</script>
+                                <span class="task-name">Pay Invoices</span>
+                                <i class="fa fa-credit-card"></i>
+                            </li>
+                            <li>
+                                <div id="j_idt58" class="ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt58_input"
+                                                                                    name="j_idt58_input"
+                                                                                    type="checkbox"
+                                                                                    autocomplete="off"
+                                                                                    aria-checked="false"/></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default">
+                                        <span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt58_s"
+                                        type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt58", {id: "j_idt58"});</script>
+                                <span class="task-name">Dinner with Tony</span>
+                                <i class="fa fa-cutlery"></i>
+                            </li>
+                            <li>
+                                <div id="j_idt60" class="ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt60_input"
+                                                                                    name="j_idt60_input"
+                                                                                    type="checkbox"
+                                                                                    autocomplete="off"
+                                                                                    aria-checked="false"/></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt60_s"
+                                        type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt60", {id: "j_idt60"});</script>
+                                <span class="task-name">Client Meeting</span>
+                                <i class="fa fa-user"></i>
+                            </li>
+                            <li>
+                                <div id="j_idt62" class="ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt62_input"
+                                                                                    name="j_idt62_input"
+                                                                                    type="checkbox"
+                                                                                    autocomplete="off"
+                                                                                    aria-checked="false"/></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt62_s"
+                                        type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt62", {id: "j_idt62"});</script>
+                                <span class="task-name">New Theme</span>
+                                <i class="fa fa-paint-brush"></i>
+                            </li>
+                            <li>
+                                <div id="j_idt64" class="ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt64_input"
+                                                                                    name="j_idt64_input"
+                                                                                    type="checkbox"
+                                                                                    autocomplete="off"
+                                                                                    aria-checked="false"/></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt64_s"
+                                        type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt64", {id: "j_idt64"});</script>
+                                <span class="task-name">Flight Ticket</span>
+                                <i class="fa fa-fighter-jet"></i>
+                            </li>
+                            <li>
+                                <div id="j_idt66" class="ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt66_input"
+                                                                                    name="j_idt66_input"
+                                                                                    type="checkbox"
+                                                                                    autocomplete="off"
+                                                                                    aria-checked="false"/></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt66_s"
+                                        type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt66", {id: "j_idt66"});</script>
+                                <span class="task-name">Generate Charts</span>
+                                <i class="fa fa-area-chart"></i>
+                            </li>
+                            <li>
+                                <div id="j_idt68" class="ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt68_input"
+                                                                                    name="j_idt68_input"
+                                                                                    type="checkbox"
+                                                                                    autocomplete="off"
+                                                                                    aria-checked="false"/></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt68_s"
+                                        type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt68", {id: "j_idt68"});</script>
+                                <span class="task-name">Call Client</span>
+                                <i class="fa fa-phone"></i>
+                            </li>
+                            <li>
+                                <div id="j_idt70" class="ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt70_input"
+                                                                                    name="j_idt70_input"
+                                                                                    type="checkbox"
+                                                                                    autocomplete="off"
+                                                                                    aria-checked="false"/></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt70_s"
+                                        type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt70", {id: "j_idt70"});</script>
+                                <span class="task-name">Share location</span>
+                                <i class="fa fa-map-marker"></i>
+                            </li>
+                            <li>
+                                <div id="j_idt72" class="ui-chkbox ui-widget">
+                                    <div class="ui-helper-hidden-accessible"><input id="j_idt72_input"
+                                                                                    name="j_idt72_input"
+                                                                                    type="checkbox"
+                                                                                    autocomplete="off"
+                                                                                    aria-checked="false"/></div>
+                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span
+                                            class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div>
+                                </div>
+                                <script id="j_idt72_s"
+                                        type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt72", {id: "j_idt72"});</script>
+                                <span class="task-name">Create Feed</span>
+                                <i class="fa fa-rss"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <script id="j_idt52_s"
+                        type="text/javascript">PrimeFaces.cw("Panel", "widget_j_idt52", {id: "j_idt52"});</script>
+            </div>
+            <div class="ui-g-12 ui-md-6 ui-lg-4 ui-fluid contact-form">
+                <div id="j_idt75" class="ui-panel ui-widget ui-widget-content ui-corner-all"
+                     data-widget="widget_j_idt75">
+                    <div id="j_idt75_header"
+                         class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span
+                            class="ui-panel-title">Message</span></div>
+                    <div id="j_idt75_content" class="ui-panel-content ui-widget-content">
+                        <div class="ui-g">
+                            <div class="ui-g-12">
+                                <div id="console"
+                                     class="ui-selectonemenu ui-widget ui-state-default ui-corner-all">
+                                    <div class="ui-helper-hidden-accessible"><input id="console_focus"
+                                                                                    name="console_focus"
+                                                                                    type="text"
+                                                                                    autocomplete="off"
+                                                                                    role="combobox"
+                                                                                    aria-haspopup="true"
+                                                                                    aria-expanded="false"/>
+                                    </div>
+                                    <div class="ui-helper-hidden-accessible"><select id="console_input"
+                                                                                     name="console_input"
+                                                                                     tabindex="-1">
+                                        <option value="">Select One</option>
+                                        <option value="Xbox One">Xbox One</option>
+                                        <option value="PS4">PS4</option>
+                                        <option value="Wii U">Wii U</option>
+                                    </select></div>
+                                    <label id="console_label"
+                                           class="ui-selectonemenu-label ui-inputfield ui-corner-all"></label>
+                                    <div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span
+                                            class="ui-icon ui-icon-triangle-1-s ui-c"></span></div>
+                                    <div id="console_panel"
+                                         class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow">
+                                        <div class="ui-selectonemenu-items-wrapper" style="height:auto">
+                                            <ul id="console_items"
+                                                class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset"
+                                                role="listbox">
+                                                <li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all"
+                                                    data-label="Select One" tabindex="-1"
+                                                    role="option">Select One
+                                                </li>
+                                                <li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all"
+                                                    data-label="Xbox One" tabindex="-1" role="option">Xbox One
+                                                </li>
+                                                <li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all"
+                                                    data-label="PS4" tabindex="-1" role="option">PS4
+                                                </li>
+                                                <li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all"
+                                                    data-label="Wii U" tabindex="-1" role="option">Wii U
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script id="console_s" type="text/javascript">$(function () {
+                                    PrimeFaces.cw("SelectOneMenu", "widget_console", {
+                                        id: "console",
+                                        autoWidth: false
+                                    });
+                                });</script>
+                            </div>
+                            <div class="ui-g-12"><input id="j_idt82" name="j_idt82" type="text"
+                                                        placeholder="Name"
+                                                        class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"/>
+                                <script id="j_idt82_s"
+                                        type="text/javascript">PrimeFaces.cw("InputText", "widget_j_idt82", {id: "j_idt82"});</script>
+                            </div>
+                            <div class="ui-g-12"><input id="j_idt84" name="j_idt84" type="text"
+                                                        placeholder="Email"
+                                                        class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"/>
+                                <script id="j_idt84_s"
+                                        type="text/javascript">PrimeFaces.cw("InputText", "widget_j_idt84", {id: "j_idt84"});</script>
+                            </div>
+                            <div class="ui-g-12"><input id="j_idt86" name="j_idt86" type="text"
+                                                        placeholder="Location"
+                                                        class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"/>
+                                <script id="j_idt86_s"
+                                        type="text/javascript">PrimeFaces.cw("InputText", "widget_j_idt86", {id: "j_idt86"});</script>
+                            </div>
+                            <div class="ui-g-12"><textarea id="j_idt88" name="j_idt88" cols="5" rows="3"
+                                                           placeholder="Message" maxlength="2147483647"
+                                                           class="ui-inputfield ui-inputtextarea ui-widget ui-state-default ui-corner-all"></textarea>
+                                <script id="j_idt88_s" type="text/javascript">$(function () {
+                                    PrimeFaces.cw("InputTextarea", "widget_j_idt88", {
+                                        id: "j_idt88",
+                                        autoResize: false
+                                    });
+                                });</script>
+                            </div>
+                            <div class="ui-g-12">
+                                <button id="j_idt90" name="j_idt90"
+                                        class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"
+                                        type="button"><span
+                                        class="ui-button-icon-left ui-icon ui-c fa fa-paper-plane-o"></span><span
+                                        class="ui-button-text ui-c">Send</span></button>
+                                <script id="j_idt90_s"
+                                        type="text/javascript">PrimeFaces.cw("CommandButton", "widget_j_idt90", {id: "j_idt90"});</script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script id="j_idt75_s"
+                        type="text/javascript">PrimeFaces.cw("Panel", "widget_j_idt75", {id: "j_idt75"});</script>
+            </div>
+            <div class="ui-g-12 ui-lg-4 contacts">
+                <div id="j_idt93" class="ui-panel ui-widget ui-widget-content ui-corner-all"
+                     data-widget="widget_j_idt93">
+                    <div id="j_idt93_header"
+                         class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span
+                            class="ui-panel-title">Contacts</span></div>
+                    <div id="j_idt93_content" class="ui-panel-content ui-widget-content">
+                        <ul>
+                            <li class="clearfix"><img id="j_idt95"
+                                                      src="#{request.contextPath}/resources/javax.faces.resource/images/avatar.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                      alt="" width="45"/>
+                                <div class="contact-info">
+                                    <span class="name">Madison Hughes (me)</span>
+                                    <span class="location">madison@pf-manhattan.com</span>
+                                </div>
+                                <div class="contact-actions">
+                                    <span class="connection-status online">online</span>
+                                    <i class="fa fa-paper-plane-o"></i>
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </li>
+                            <li class="clearfix"><img id="j_idt97"
+                                                      src="#{request.contextPath}/resources/javax.faces.resource/images/avatar1.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                      alt="" width="45"/>
+                                <div class="contact-info">
+                                    <span class="name">Joshua Williams</span>
+                                    <span class="location">joshua@pf-manhattan.com</span>
+                                </div>
+                                <div class="contact-actions">
+                                    <span class="connection-status online">online</span>
+                                    <i class="fa fa-paper-plane-o"></i>
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </li>
+                            <li class="clearfix"><img id="j_idt99"
+                                                      src="#{request.contextPath}/resources/javax.faces.resource/images/avatar2.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                      alt="" width="45"/>
+                                <div class="contact-info">
+                                    <span class="name">Emily Clark</span>
+                                    <span class="location">emily@pf-manhattan.com</span>
+                                </div>
+                                <div class="contact-actions">
+                                    <span class="connection-status offline">offline</span>
+                                    <i class="fa fa-paper-plane-o"></i>
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </li>
+                            <li class="clearfix"><img id="j_idt101"
+                                                      src="#{request.contextPath}/resources/javax.faces.resource/images/avatar3.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                      alt="" width="45"/>
+                                <div class="contact-info">
+                                    <span class="name">Tim Johnson</span>
+                                    <span class="location">tim@pf-manhattan.com</span>
+                                </div>
+                                <div class="contact-actions">
+                                    <span class="connection-status online">online</span>
+                                    <i class="fa fa-paper-plane-o"></i>
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </li>
+                            <li class="clearfix"><img id="j_idt103"
+                                                      src="#{request.contextPath}/resources/javax.faces.resource/images/avatar4.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                      alt="" width="45"/>
+                                <div class="contact-info">
+                                    <span class="name">David Stark</span>
+                                    <span class="location">kelly@pf-manhattan.com</span>
+                                </div>
+                                <div class="contact-actions">
+                                    <span class="connection-status offline">offline</span>
+                                    <i class="fa fa-paper-plane-o"></i>
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <script id="j_idt93_s"
+                        type="text/javascript">PrimeFaces.cw("Panel", "widget_j_idt93", {id: "j_idt93"});</script>
+            </div>
+
+            <div class="ui-g-12 ui-lg-8 chat">
+                <div id="j_idt106" class="ui-panel ui-widget ui-widget-content ui-corner-all"
+                     data-widget="widget_j_idt106">
+                    <div id="j_idt106_header"
+                         class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span
+                            class="ui-panel-title">Chat</span></div>
+                    <div id="j_idt106_content" class="ui-panel-content ui-widget-content">
+                        <ul>
+                            <li class="clearfix message-from"><img id="j_idt108"
+                                                                   src="#{request.contextPath}/resources/javax.faces.resource/images/avatar2.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                                   alt=""/>
+                                <span>Retro occupy organic, stumptown shabby chic pour-over roof party DIY normcore.</span>
+                            </li>
+                            <li class="clearfix message-own"><img id="j_idt110"
+                                                                  src="#{request.contextPath}/resources/javax.faces.resource/images/avatar.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                                  alt=""/>
+                                <span>Actually artisan organic occupy, Wes Anderson ugh whatever pour-over gastropub selvage.</span>
+                            </li>
+                            <li class="clearfix message-from"><img id="j_idt112"
+                                                                   src="#{request.contextPath}/resources/javax.faces.resource/images/avatar2.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                                   alt=""/>
+                                <span>Chillwave craft beer tote bag stumptown quinoa hashtag.</span>
+                            </li>
+                            <li class="clearfix message-own"><img id="j_idt114"
+                                                                  src="#{request.contextPath}/resources/javax.faces.resource/images/avatar.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                                  alt=""/>
+                                <span>Dreamcatcher locavore iPhone chillwave, occupy trust fund slow-carb distillery art party narwhal.</span>
+                            </li>
+                            <li class="clearfix message-own">
+                                <span>Sed ut perspiciatis unde omnis iste natus.</span>
+                            </li>
+                            <li class="clearfix message-from"><img id="j_idt116"
+                                                                   src="#{request.contextPath}/resources/javax.faces.resource/images/avatar2.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                                   alt=""/>
+                                <span>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse.</span>
+                            </li>
+                            <li class="clearfix message-own"><img id="j_idt118"
+                                                                  src="#{request.contextPath}/resources/javax.faces.resource/images/avatar.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                                  alt=""/>
+                                <span>At vero eos et accusamus.</span>
+                            </li>
+                        </ul>
+                        <div class="new-message">
+                            <div class="message-attachment">
+                                <i class="fa fa-paperclip"></i>
+                            </div>
+                            <div class="message-input">
+                                <input type="text" placeholder="Write a message" class="ui-inputfield"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script id="j_idt106_s"
+                        type="text/javascript">PrimeFaces.cw("Panel", "widget_j_idt106", {id: "j_idt106"});</script>
+            </div>
+            <div class="ui-g-12 ui-lg-4">
+                <div class="user-card">
+                    <div class="user-card-header"><img id="j_idt121"
+                                                       src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/usercard.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                       alt="" width="100"/>
+                    </div>
+                    <div class="user-card-content"><img id="j_idt123"
+                                                        src="#{request.contextPath}/resources/javax.faces.resource/images/avatar.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                        alt=""/>
+                        <button id="user-button" name="user-button"
+                                class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only secondary"
+                                type="button"><span
+                                class="ui-button-icon-left ui-icon ui-c ui-icon-plus"></span><span
+                                class="ui-button-text ui-c">ui-button</span></button>
+                        <script id="user-button_s"
+                                type="text/javascript">PrimeFaces.cw("CommandButton", "widget_user_button", {id: "user-button"});</script>
+                        <div id="j_idt124"
+                             class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow"
+                             role="menu">
+                            <div tabindex="0" class="ui-helper-hidden-accessible"></div>
+                            <ul class="ui-menu-list ui-helper-reset">
+                                <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1"
+                                                                                                   class="ui-menuitem-link ui-corner-all"
+                                                                                                   href="%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html#"><span
+                                        class="ui-menuitem-icon ui-icon fa fa-check"></span><span
+                                        class="ui-menuitem-text">Save</span></a></li>
+                                <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1"
+                                                                                                   class="ui-menuitem-link ui-corner-all"
+                                                                                                   href="%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html#"><span
+                                        class="ui-menuitem-icon ui-icon fa fa-refresh"></span><span
+                                        class="ui-menuitem-text">Update</span></a></li>
+                                <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1"
+                                                                                                   class="ui-menuitem-link ui-corner-all"
+                                                                                                   href="%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228.html#"><span
+                                        class="ui-menuitem-icon ui-icon fa fa-trash"></span><span
+                                        class="ui-menuitem-text">Delete</span></a></li>
+                            </ul>
+                        </div>
+                        <script id="j_idt124_s" type="text/javascript">$(function () {
+                            PrimeFaces.cw("PlainMenu", "widget_j_idt124", {
+                                id: "j_idt124",
+                                overlay: true,
+                                my: "left top",
+                                at: "left bottom",
+                                trigger: "user-button",
+                                triggerEvent: "click"
+                            });
+                        });</script>
+
+                        <div class="user-card-name">
+                            <span>Madison Hughes</span>
+                        </div>
+
+                        <div class="user-detail">
+                            <ul>
+                                <li class="clearfix">
+                                    <i class="fa fa-tasks fa-fw"></i>
+                                    <span class="project-title">Tasks</span>
+                                    <span class="project-detail">3 open</span>
+                                    <div class="project-progressbar">
+                                        <div class="project-progressbar-value" style="width: 50%"></div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <i class="fa fa-usd fa-fw"></i>
+                                    <span class="project-title">Revenue</span>
+                                    <span class="project-detail">+20%</span>
+                                    <div class="project-progressbar">
+                                        <div class="project-progressbar-value" style="width: 20%"></div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <i class="fa fa-credit-card fa-fw"></i>
+                                    <span class="project-title">Payments</span>
+                                    <span class="project-detail">24 new</span>
+                                    <div class="project-progressbar">
+                                        <div class="project-progressbar-value" style="width: 65%"></div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <i class="fa fa-users fa-fw"></i>
+                                    <span class="project-title">Clients</span>
+                                    <span class="project-detail">+80%</span>
+                                    <div class="project-progressbar">
+                                        <div class="project-progressbar-value" style="width: 80%"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-g-12 ui-lg-8">
+                <div class="card">
+                    <form id="j_idt129" name="j_idt129" method="post"
+                          action="https://www.primefaces.org/manhattan/dashboard.xhtml;jsessionid=node0s8mlup7xlb1a1gggjfhgfa8fq105228.node0"
+                          enctype="application/x-www-form-urlencoded">
+                        <input type="hidden" name="j_idt129" value="j_idt129"/>
+                        <div id="j_idt129:j_idt130" class="ui-datatable ui-widget ui-datatable-reflow"
+                             style="margin-bottom:20px"><label id="j_idt129:j_idt130_reflowDD_label"
+                                                               for="j_idt129:j_idt130_reflowDD"
+                                                               class="ui-reflow-label">Sort</label><select
+                                id="j_idt129:j_idt130_reflowDD" name="j_idt129:j_idt130_reflowDD"
+                                class="ui-reflow-dropdown ui-state-default">
+                            <option value="0_0">Id Ascending</option>
+                            <option value="0_1">Id Descending</option>
+                            <option value="1_0">Year Ascending</option>
+                            <option value="1_1">Year Descending</option>
+                            <option value="2_0">Brand Ascending</option>
+                            <option value="2_1">Brand Descending</option>
+                            <option value="3_0">Color Ascending</option>
+                            <option value="3_1">Color Descending</option>
+                        </select>
+                            <div class="ui-datatable-header ui-widget-header ui-corner-top">RECENT SALES</div>
+                            <div class="ui-datatable-tablewrapper">
+                                <table role="grid">
+                                    <thead id="j_idt129:j_idt130_head">
+                                    <tr role="row">
+                                        <th id="j_idt129:j_idt130:j_idt132"
+                                            class="ui-state-default ui-sortable-column" role="columnheader"
+                                            aria-label="Id"><span class="ui-column-title">Id</span><span
+                                                class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span>
+                                        </th>
+                                        <th id="j_idt129:j_idt130:j_idt134"
+                                            class="ui-state-default ui-sortable-column" role="columnheader"
+                                            aria-label="Year"><span class="ui-column-title">Year</span><span
+                                                class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span>
+                                        </th>
+                                        <th id="j_idt129:j_idt130:j_idt136"
+                                            class="ui-state-default ui-sortable-column" role="columnheader"
+                                            aria-label="Brand"><span class="ui-column-title">Brand</span><span
+                                                class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span>
+                                        </th>
+                                        <th id="j_idt129:j_idt130:j_idt138"
+                                            class="ui-state-default ui-sortable-column" role="columnheader"
+                                            aria-label="Color"><span class="ui-column-title">Color</span><span
+                                                class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="j_idt129:j_idt130_data"
+                                           class="ui-datatable-data ui-widget-content"
+                                           tabindex="0">
+                                    <tr data-ri="0" data-rk="cb7566bf"
+                                        class="ui-widget-content ui-datatable-even ui-datatable-selectable"
+                                        role="row" aria-selected="false">
+                                        <td role="gridcell">cb7566bf</td>
+                                        <td role="gridcell">1978</td>
+                                        <td role="gridcell">Renault</td>
+                                        <td role="gridcell">White</td>
+                                    </tr>
+                                    <tr data-ri="1" data-rk="7031a6da"
+                                        class="ui-widget-content ui-datatable-odd ui-datatable-selectable"
+                                        role="row" aria-selected="false">
+                                        <td role="gridcell">7031a6da</td>
+                                        <td role="gridcell">1989</td>
+                                        <td role="gridcell">BMW</td>
+                                        <td role="gridcell">Red</td>
+                                    </tr>
+                                    <tr data-ri="2" data-rk="e2461177"
+                                        class="ui-widget-content ui-datatable-even ui-datatable-selectable"
+                                        role="row" aria-selected="false">
+                                        <td role="gridcell">e2461177</td>
+                                        <td role="gridcell">2009</td>
+                                        <td role="gridcell">Mercedes</td>
+                                        <td role="gridcell">White</td>
+                                    </tr>
+                                    <tr data-ri="3" data-rk="489509f6"
+                                        class="ui-widget-content ui-datatable-odd ui-datatable-selectable"
+                                        role="row" aria-selected="false">
+                                        <td role="gridcell">489509f6</td>
+                                        <td role="gridcell">1981</td>
+                                        <td role="gridcell">Honda</td>
+                                        <td role="gridcell">Silver</td>
+                                    </tr>
+                                    <tr data-ri="4" data-rk="8957bb1b"
+                                        class="ui-widget-content ui-datatable-even ui-datatable-selectable"
+                                        role="row" aria-selected="false">
+                                        <td role="gridcell">8957bb1b</td>
+                                        <td role="gridcell">1969</td>
+                                        <td role="gridcell">Honda</td>
+                                        <td role="gridcell">Yellow</td>
+                                    </tr>
+                                    <tr data-ri="5" data-rk="9f784feb"
+                                        class="ui-widget-content ui-datatable-odd ui-datatable-selectable"
+                                        role="row" aria-selected="false">
+                                        <td role="gridcell">9f784feb</td>
+                                        <td role="gridcell">1969</td>
+                                        <td role="gridcell">Audi</td>
+                                        <td role="gridcell">Red</td>
+                                    </tr>
+                                    <tr data-ri="6" data-rk="aef5f4b9"
+                                        class="ui-widget-content ui-datatable-even ui-datatable-selectable"
+                                        role="row" aria-selected="false">
+                                        <td role="gridcell">aef5f4b9</td>
+                                        <td role="gridcell">1979</td>
+                                        <td role="gridcell">Jaguar</td>
+                                        <td role="gridcell">Green</td>
+                                    </tr>
+                                    <tr data-ri="7" data-rk="02957d0f"
+                                        class="ui-widget-content ui-datatable-odd ui-datatable-selectable"
+                                        role="row" aria-selected="false">
+                                        <td role="gridcell">02957d0f</td>
+                                        <td role="gridcell">2007</td>
+                                        <td role="gridcell">Fiat</td>
+                                        <td role="gridcell">Red</td>
+                                    </tr>
+                                    <tr data-ri="8" data-rk="f9f8c45a"
+                                        class="ui-widget-content ui-datatable-even ui-datatable-selectable"
+                                        role="row" aria-selected="false">
+                                        <td role="gridcell">f9f8c45a</td>
+                                        <td role="gridcell">1984</td>
+                                        <td role="gridcell">Honda</td>
+                                        <td role="gridcell">Black</td>
+                                    </tr>
+                                    <tr data-ri="9" data-rk="f99ef363"
+                                        class="ui-widget-content ui-datatable-odd ui-datatable-selectable"
+                                        role="row" aria-selected="false">
+                                        <td role="gridcell">f99ef363</td>
+                                        <td role="gridcell">2000</td>
+                                        <td role="gridcell">Renault</td>
+                                        <td role="gridcell">Green</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <input type="hidden" id="j_idt129:j_idt130_selection"
+                                   name="j_idt129:j_idt130_selection"
+                                   autocomplete="off" value=""/></div>
+                        <script id="j_idt129:j_idt130_s" type="text/javascript">$(function () {
+                            PrimeFaces.cw("DataTable", "widget_j_idt129_j_idt130", {
+                                id: "j_idt129:j_idt130",
+                                selectionMode: "single",
+                                reflow: true
+                            });
+                        });</script>
+                        <div id="j_idt129:j_idt140"
+                             class="ui-panel ui-widget ui-widget-content ui-corner-all chart-panel"
+                             data-widget="widget_j_idt129_j_idt140">
+                            <div id="j_idt129:j_idt140_header"
+                                 class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span
+                                    class="ui-panel-title">SALES GRAPH</span></div>
+                            <div id="j_idt129:j_idt140_content" class="ui-panel-content ui-widget-content">
+                                <div id="j_idt129:j_idt141"></div>
+                                <script id="j_idt129:j_idt141_s" type="text/javascript">$(function () {
+                                    PrimeFaces.cw('Chart', 'widget_j_idt129_j_idt141', {
+                                        id: 'j_idt129:j_idt141',
+                                        type: 'bar',
+                                        responsive: true,
+                                        data: [[120, 100, 44, 150, 25], [52, 60, 110, 135, 120]],
+                                        title: "Bar Chart",
+                                        legendPosition: "ne",
+                                        extender: skinBar,
+                                        axes: {
+                                            yaxis: {
+                                                label: "Births",
+                                                min: 0,
+                                                max: 200,
+                                                renderer: $.jqplot.LinearAxisRenderer,
+                                                tickOptions: {angle: 0}
+                                            },
+                                            xaxis: {
+                                                label: "Gender",
+                                                renderer: $.jqplot.CategoryAxisRenderer,
+                                                tickOptions: {angle: 0}
+                                            }
+                                        },
+                                        series: [{label: 'Boys'}, {label: 'Girls'}],
+                                        ticks: ["2004", "2005", "2006", "2007", "2008"],
+                                        orientation: "vertical",
+                                        datatip: true
+                                    }, 'charts');
+                                });</script>
+                            </div>
+                        </div>
+                        <script id="j_idt129:j_idt140_s"
+                                type="text/javascript">PrimeFaces.cw("Panel", "widget_j_idt129_j_idt140", {id: "j_idt129:j_idt140"});</script>
+                        <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:45"
+                               value="-4650909522993706924:5052886525237526637" autocomplete="off"/>
+                    </form>
+                </div>
+            </div>
+
+            <div class="ui-g-12 ui-lg-4">
+                <div class="card timeline ui-fluid">
+                    <div class="ui-g">
+                        <div class="ui-g-3">
+                            <span class="event-time">just now</span>
+                            <i class="fa fa-map-signs" style="color:#147df0"></i>
+                        </div>
+                        <div class="ui-g-9">
+                            <span class="event-owner" style="color:#147df0">Katherine May</span>
+                            <span class="event-text">Lorem ipsun dolor amet</span>
+                            <div class="event-content"><img id="j_idt143"
+                                                            src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/bridge.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                            alt="" width="100"/>
+                            </div>
+                        </div>
+
+                        <div class="ui-g-3">
+                            <span class="event-time">12h ago</span>
+                            <i class="fa fa-star" style="color:#ed3c76"></i>
+                        </div>
+                        <div class="ui-g-9">
+                            <span class="event-owner" style="color:#ed3c76">Brandon Santos</span>
+                            <span class="event-text">Ab nobis, magnam sunt eum. Laudantium, repudiandae, similique!.</span>
+                        </div>
+
+                        <div class="ui-g-3">
+                            <span class="event-time">15h ago</span>
+                            <i class="fa fa-comment" style="color:#3e9018"></i>
+                        </div>
+                        <div class="ui-g-9">
+                            <span class="event-owner" style="color:#3e9018">Stephan Ward</span>
+                            <span class="event-text">Omnis veniam quibusdam ratione est repellat qui nam quisquam ab mollitia dolores ullam voluptates, similique, dignissimos.</span>
+                        </div>
+
+                        <div class="ui-g-3">
+                            <span class="event-time">2d ago</span>
+                            <i class="fa fa-map" style="color:#ffb200"></i>
+                        </div>
+                        <div class="ui-g-9">
+                            <span class="event-owner" style="color:#ffb200">Jason Smith</span>
+                            <span class="event-text">Laudantium, repudiandae, similique!</span>
+                            <div class="event-content"><img id="j_idt145"
+                                                            src="#{request.contextPath}/resources/javax.faces.resource/images/dashboard/map.png.xhtml%3bjsessionid%3dnode0s8mlup7xlb1a1gggjfhgfa8fq105228702f.png?ln=manhattan-layout"
+                                                            alt=""/>
+                            </div>
+                        </div>
+
+                        <div class="ui-g-3">
+                            <span class="event-time">1w ago</span>
+                            <i class="fa fa-heart" style="color:#633ea5"></i>
+                        </div>
+                        <div class="ui-g-9">
+                            <span class="event-owner">Kevin Cox</span>
+                            <span class="event-text">Quibusdam ratione est repellat qui nam quisquam veniam quibusdam ratione.</span>
+                        </div>
+
+                        <div class="ui-g-3">
+                            <span class="event-time">2w ago</span>
+                            <i class="fa fa-history" style="color:#599597"></i>
+                        </div>
+                        <div class="ui-g-9">
+                            <span class="event-owner" style="color:#599597">Walter White</span>
+                            <span class="event-text">I am the one who knocks!</span>
+                        </div>
+
+                        <div class="ui-g-12">
+                            <button id="j_idt147" name="j_idt147"
+                                    class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left rounded-btn raised-btn"
+                                    type="button"><span
+                                    class="ui-button-icon-left ui-icon ui-c ui-icon-refresh"></span><span
+                                    class="ui-button-text ui-c">Refresh</span></button>
+                            <script id="j_idt147_s"
+                                    type="text/javascript">PrimeFaces.cw("CommandButton", "widget_j_idt147", {id: "j_idt147"});</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-g-12">
+                <div id="j_idt149" class="ui-panel ui-widget ui-widget-content ui-corner-all"
+                     style="height:100%"
+                     data-widget="widget_j_idt149">
+                    <div id="j_idt149_header"
+                         class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span
+                            class="ui-panel-title">Calendar</span></div>
+                    <div id="j_idt149_content" class="ui-panel-content ui-widget-content">
+                        <div id="j_idt150">
+                            <div id="j_idt150_container"></div>
+                            <input type="hidden" id="j_idt150_view" name="j_idt150_view" autocomplete="off"
+                                   value="month"/></div>
+                        <script id="j_idt150_s" type="text/javascript">$(function () {
+                            PrimeFaces.cw("Schedule", "widget_j_idt150", {
+                                id: "j_idt150",
+                                defaultView: "month",
+                                locale: "en_US",
+                                lazyFetching: false,
+                                header: {
+                                    left: 'prev,next',
+                                    center: "title",
+                                    right: "month,agendaWeek,agendaDay"
+                                }
+                            });
+                        });</script>
+                    </div>
+                </div>
+                <script id="j_idt149_s"
+                        type="text/javascript">PrimeFaces.cw("Panel", "widget_j_idt149", {id: "j_idt149"});</script>
+            </div>
+
+        </div>
+    </ui:define>
+</ui:composition>
